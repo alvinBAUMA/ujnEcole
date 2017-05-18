@@ -3,7 +3,7 @@
 <style>
     body{
         background-color: #ebebeb;
-        background-image: url(img/imgApp/bc-acceuil.jpg);
+        background-image: url(img/imgApp/bc-home.jpg);
         padding-top: 60px;
         background-size: cover
     }
@@ -26,8 +26,9 @@
 
 <body>
 <body class="text-center">
-    <label style="text-shadow: 1px 4px 2px #000;font-size: 50px; color: #fff">STOCK MANAGER</label><br/>
-    <div id="block-login-admin" class="col-lg-4 col-md-4 col-sm-8 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-2 block-login" style="position: absolute; top: 200px">
+    <label style="font-size: 50px; color: #1891cf; text-shadow: 1px 4px 2px #000">STOCK MANAGER</label><br/>
+    <img width="70px" class="img-rounded" src="img/imgApp/stockmanagerLogo.png"/><br/>
+    <div id="block-login-admin" class="col-lg-4 col-md-4 col-sm-8 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-2 block-login" style="position: absolute; top: 250px">
         <div class="panel panel-default"  style="border-radius: 10px; box-shadow: 0px 0px 100px #fff; border: 2px solid #fafafa">
             <div class="panel-body" style="background-color: #000000; border-radius: 10px">
                 <div id="block1" class="text-center">

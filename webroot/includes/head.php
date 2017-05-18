@@ -8,12 +8,12 @@
         <meta name="author" content="Tech1 GEI ULPGL">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-        <link rel="icon" type="image/ico" href="img/imgApp/logo_tezzou.png"/>
+        <link rel="icon" type="image/ico" href="img/imgApp/stockmanagerLogo.png"/>
 
         <title>
             <?php
             // le titre de la page varie avec la pagequi charge le head
-            echo isset($title) ? $title : "Stock manager";
+            echo isset($title) ? $title : "Tezzou Stock manager";
             ?>
 
         </title>
