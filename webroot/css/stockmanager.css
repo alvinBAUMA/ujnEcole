@@ -1,0 +1,177 @@
+/* 
+    Created on : 17 mai 2017, 00:24:22
+    Author     : Alvin
+*/
+body{
+    background-color: #f5f9fc;
+    padding-top: 60px;
+}
+
+.text-center > a {
+    text-decoration: none
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-center > a:hover {
+    text-decoration: none
+}
+.container-0 {
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.fa-rouge{
+    color: #B94A48
+}
+.fa-bleu{
+    color: #269abc
+}
+
+.couper_deborder{
+    word-break: break-all;
+    -ms-word-break: break-all;
+    -moz-word-break: break-all;
+}
+
+/*// LES CLASSE DE COULEUR ET COULEUR DE FONT//
+/***************************************/
+.rouge{color: #c90303;}
+.rouge{
+    color: #c40808 
+}
+.bleu{
+    color: #269abc
+}
+.gris{
+    color: #555
+}
+.bleu-clair{
+    color: #c3cdeb
+}
+.orange{
+    color: #fe8d00
+}
+.vert{
+    color: #1ba260;
+}
+.bleu-vert{
+    color: #38595e
+}
+.blanc{
+    color: #fff
+}
+.noir{
+    color: #000
+}
+.jaune{
+    color: #eded01
+}
+
+.bc-noir{
+    background-color: #000;
+}
+
+
+.bc-rouge{
+    background-color: #c40808 
+}
+.bc-blanc{
+    background-color: #fff
+}
+.bc-bleu{
+    background-color: #31708f
+}
+.bc-gris{
+    background-color: #555
+}
+.bc-mauve{
+    background-color: #7b4776;
+}
+.bc-bleu-clair{
+    background-color: #c3cdeb
+}
+.bc-orange{
+    background-color: #fe8d00
+}
+.bc-vert{
+    background-color: #1ba260;
+}
+.bc-bleu-vert{
+    background-color: #38595e
+}
+.bc-clair-mauve{
+    background-color: #fcebff;
+}
+/*// LES TAILLES DE POLICE*/
+
+.media > #prop_super_correspondance{
+    padding: 3px;
+    background-color: #fafeff;
+    border-radius: 5px;
+    box-shadow: 1px 5px 2px #d4d4d4;
+}
+.taille-10{font-size: 10px}
+.taille-11{font-size: 11px}
+.taille-12{font-size: 12px}
+.taille-13{font-size: 13px}
+.taille-14{font-size: 14px}
+.taille-15{font-size: 15px}
+.taille-16{font-size: 16px}
+.taille-17{font-size: 17px}
+.taille-18{font-size: 18px}
+.taille-19{font-size: 19px}
+.taille-20{font-size: 20px}
+.taille-25{font-size: 25px}
+.taille-30{font-size: 30px}
+.taille-35{font-size: 35px}
+.font-bold{font-weight: bold}
+/*//MES BOUTON....*/
+.btn-rouge {
+    color: #fffafe;
+    background-color: #c61520;
+    border-color: #e7e5e7;
+}
+.btn-rouge:hover {
+    color: #fffafe;
+    border-radius: 25px;
+    background-color: #c61520;
+    border-color: #e7e5e7;
+}
+
+.btn-noir {
+    color: #fff;
+    background-color: #272727;
+    border-color: #e7e5e7;
+}
+.btn-noir:hover {
+    color: #fcfcfc;
+    border-radius: 25px;
+    background-color: #151515;
+    border-color: #e7e5e7;
+}
+bc-noir{background-color: #272727}
+/*//STYLE BORDURE.....*/
+.bordure-3{
+    border-radius: 3px;
+}
+.bordure-5{
+    border-radius: 5px;
+}
+.bordure-7{
+    border-radius: 7px;
+}
+.bordure-10{
+    border-radius: 10px;
+}
+
+.notif{
+    background-color: red !important;
+    font-weight: bold;
+}
+
+/*//STYLE DE FONT*/
+.font-vrinda{font-family: Vrinda;}

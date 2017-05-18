@@ -1,0 +1,44 @@
+/* 
+    Created on : 27 févr. 2016, 15:56:06
+    Author     : ALIVNIC
+*/
+/**********************************
+Name: j.validate
+***********************************/
+
+form.cmxform legend {padding-left: 0;}
+
+form.cmxform legend, form.cmxform label {color: #333;}
+
+form.cmxform fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+	background: url(../images/cmxform-fieldset.gif) left bottom repeat-x;
+	background-color: #F8FDEF;
+}
+
+form.cmxform fieldset fieldset {background: none;}
+
+form.cmxform fieldset p, form.cmxform fieldset fieldset {
+	padding: 5px 10px 7px;
+	background: url(../images/cmxform-divider.gif) left bottom repeat-x;
+}
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: red;
+	font-style: italic;
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 4px;
+}
+div.error { display: none; }
+input {	border: 1px solid black; }
+input.checkbox { border: none }
+input:focus { border: 2px solid #af5eaa; border-radius: 15px; box-shadow: none }
+textarea:focus { border: 2px solid #af5eaa; border-radius: 15px; box-shadow: none }
+input.error { border: 1px dotted red; }
+form.cmxform .gray * { color: gray; }
+
