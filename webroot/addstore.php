@@ -5,4 +5,4 @@ require '../controller/AccueilController.php';
 
 $Accueil = new AccueilController();
 
-require_once '../vues/accueil/accueil.php';
+require_once '../vues/addstore/choisir_abonnement.php';

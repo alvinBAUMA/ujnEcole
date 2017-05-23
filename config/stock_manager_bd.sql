@@ -108,6 +108,7 @@ CREATE TABLE IF NOT EXISTS `stockmanager`.`produits` (
   `etat` VARCHAR(45) NULL,
   `categorie_id` INT NOT NULL,
   `boutique_id` INT NOT NULL,
+  `photo` VARCHAR(255) NULL,
   PRIMARY KEY (`id_prod`),
   INDEX `fk_produits_categories_produit1_idx` (`categorie_id` ASC),
   INDEX `fk_produits_boutiques1_idx` (`boutique_id` ASC),
@@ -304,6 +305,22 @@ CREATE TABLE IF NOT EXISTS `stockmanager`.`permission_admin` (
   CONSTRAINT `fk_permission_admin_boutiques1`
     FOREIGN KEY (`boutique_id`)
     REFERENCES `stockmanager`.`boutiques` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `stockmanager`.`caracteristiques_produit`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `stockmanager`.`caracteristiques_produit` (
+  `caracteristique` VARCHAR(255) NULL,
+  `valeur` VARCHAR(255) NULL,
+  `produit_id` INT NOT NULL,
+  INDEX `fk_caracteristiques_produit_produits1_idx` (`produit_id` ASC),
+  CONSTRAINT `fk_caracteristiques_produit_produits1`
+    FOREIGN KEY (`produit_id`)
+    REFERENCES `stockmanager`.`produits` (`id_prod`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

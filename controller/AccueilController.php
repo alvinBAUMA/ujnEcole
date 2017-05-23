@@ -15,4 +15,6 @@ class AccueilController extends Controller{
     function __construct() {
         
     }
+    
+    
 }
