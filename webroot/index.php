@@ -1,51 +1,22 @@
 <?php
 
+session_start();
 require "../core/includes.php";
-require '../controller/BienvenueController.php';
-require '../model/UserModel.php';
+require '../filtre/visiteur_filtre.php';
 
-$index = new BienvenueController();
-
-
-//TRAITEMENT DE LA CONNEXION
-//***************************
-// si le fourmulaire d'inscription a ete soumis
 if (isset($_POST["connexion"])) {
-    // on cree un tableau erreurs qui contiendra l'ensemble des nos erreurs
-    $erreurs = [];
-    $token1 = rand(10000000, 99999999);
-    // si tous les champs sont remplis
-    if (champs_non_vide(['identifiant', 'motdepasse'])) {
-        extract($_POST);
-
-
-        $user = UserModel::selectUserByLogin($identifiant, $motdepasse);
-
-        if ($user) {
-
-            $_SESSION['id'] = $user->id;
-            $_SESSION['prenom'] = $user->prenom;
-            $_SESSION['nom'] = $user->nom;
-
-            // creation des cookies
-            $id_cookie = $token1 . ($user->id + 111);
-            setcookie("token_id", $id_cookie, time() + 3600 * 24 * 365, null, null, FALSE, TRUE);
-            setcookie("token_hash", $user->motdepasse, time() + 3600 * 24 * 365, null, null, FALSE, TRUE);
-
-            //On redirige l'utilisateur sur la page d'acceuil
-            rediriger('accueil.php');
-            
-        } else {
-            //msg_flash("salut");
-            $erreurs[] = "Combinaison identifiant/mot de passe incorrect";
-        }
+    if (isset($_POST['login']) and $_POST['login'] == "EN-123456") {
+        rediriger("gClasse?ref=liste_presence");
+    } elseif (($_POST['login']) and $_POST['login'] == "SE-123456") {
+        rediriger("gInscription?ref=historique");
+    }elseif (($_POST['login']) and $_POST['login'] == "FI-123456") {
+        rediriger("gPaiement?ref=historique");
+    }elseif (($_POST['login']) and $_POST['login'] == "EV-123456") {
+        rediriger("gEvaluation?ref=historique");
     } else {
-        $erreurs[] = "Veillez remplir tous les champs";
+        msg_flash("Login Incorrect");
     }
-} 
-//***************************
-// FIN TRAITEMENT DE LA CONNEXION
-//***************************
+}
 
 require_once '../vues/bienvenue/index.php';
 

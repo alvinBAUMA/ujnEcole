@@ -5,5 +5,5 @@ define("DS", DIRECTORY_SEPARATOR); /** @DS le separateur slash pour linux ou ant
 define("CORE", ROOT.DS.'core');
 define("BASE_URL", dirname(dirname($_SERVER['SCRIPT_NAME'])));/** @BASE_URL l'url de base du site like https://www.evoting.com*/
 
-define("NOM_APPLI", "Stock Manager");
+define("NOM_APPLI", "Ujn Ecole");
 
