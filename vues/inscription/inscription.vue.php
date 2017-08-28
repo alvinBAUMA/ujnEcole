@@ -34,9 +34,9 @@
             <?php include 'include_inscription/modifierInscription.php'; ?>
             <?php include 'include_inscription/detail_inscription.php'; ?>
             <?php include 'include_inscription/addInscription.php'; ?>
+            <?php include "include_inscription/addInscription2.php"; ?>
+            <?php include "include_inscription/addInscriptionFin.php"; ?>
             
-            
-
             <div class="col-md-3 col-lg-3 col-sm-3" id='div_gauche'>
                 <?php include 'include_inscription/div_menu_gauche.php'; ?>
             </div>
